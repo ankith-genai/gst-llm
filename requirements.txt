@@ -1,0 +1,8 @@
+# requirements.txt
+chromadb
+langchain
+tiktoken
+ollama
+langchain-community
+Flask
+sentence-transformers
