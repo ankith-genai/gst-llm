@@ -3,6 +3,7 @@
 # redis-stack-server
 langchain
 tiktoken
+redis
 ollama
 langchain-community
 Flask
