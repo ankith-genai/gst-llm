@@ -1,9 +1,8 @@
 from flask import Flask, request, jsonify
 import os
-import redis
 from langchain.vectorstores import Redis as RedisVectorStore
 from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.llms import Ollamaf
+from langchain.llms import Ollama
 from langchain.chains import RetrievalQA
 
 app = Flask(__name__)
