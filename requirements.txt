@@ -1,8 +1,10 @@
 # requirements.txt
-chromadb
+# chromadb
+# redis-stack-server
 langchain
 tiktoken
 ollama
 langchain-community
 Flask
 sentence-transformers
+gunicorn
