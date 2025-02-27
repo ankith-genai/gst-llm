@@ -7,5 +7,5 @@ redis
 # ollama
 langchain-community
 Flask
-# sentence-transformers
+sentence-transformers
 gunicorn
