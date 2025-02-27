@@ -2,7 +2,7 @@
 # chromadb
 # redis-stack-server
 langchain
-# tiktoken
+tiktoken
 redis
 # ollama
 langchain-community
