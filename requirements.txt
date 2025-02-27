@@ -2,10 +2,10 @@
 # chromadb
 # redis-stack-server
 langchain
-tiktoken
+# tiktoken
 redis
-ollama
-langchain-community
+# ollama
+# langchain-community
 Flask
-sentence-transformers
+# sentence-transformers
 gunicorn
