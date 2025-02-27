@@ -5,7 +5,7 @@ langchain
 # tiktoken
 redis
 # ollama
-# langchain-community
+langchain-community
 Flask
 # sentence-transformers
 gunicorn
