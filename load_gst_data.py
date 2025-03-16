@@ -44,7 +44,7 @@ except redis.exceptions.ResponseError:
     print(f"Index '{index_name}' not found in Redis. Creating new index.")
 
     # Load documents
-    loader = DirectoryLoader(gst_data_path, glob="**/*.txt", loader_cls=TextLoader, encoding='utf-8' )
+    loader = DirectoryLoader(gst_data_path, glob="**/*.txt", loader_cls=TextLoader,  )
     documents = loader.load()
 
     # Split documents
