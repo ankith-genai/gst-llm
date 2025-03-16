@@ -1,11 +1,9 @@
-# requirements.txt
-# chromadb
-# redis-stack-server
-langchain
-tiktoken
-redis
-# ollama
-langchain-community
 Flask
-sentence-transformers
+requests
+langchain
 gunicorn
+langchain-redis
+langchain-ollama
+langchain-huggingface
+tiktoken
+langchain-community

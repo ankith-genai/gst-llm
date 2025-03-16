@@ -9,4 +9,4 @@
 # sleep 5
 
 # Start Flask app with Gunicorn
-exec gunicorn -b 0.0.0.0:8000 src.app:app --workers 4 --timeout 0
+exec gunicorn -b 0.0.0.0:5000 app:app --workers 4 --timeout 0

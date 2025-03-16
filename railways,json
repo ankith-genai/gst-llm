@@ -1,0 +1,11 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "deploy": {
+    "startCommand":  "/app/start_app.sh"
+  },
+  "env": {
+    "RAILWAY_PYTHON_VERSION": "3.9"
+  }
+}
