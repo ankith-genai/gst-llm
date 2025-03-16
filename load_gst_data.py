@@ -44,7 +44,7 @@ except redis.exceptions.ResponseError:
     print(f"Index '{index_name}' not found in Redis. Creating new index.")
 
     # Load documents
-    loader = DirectoryLoader(gst_data_path, glob="**/*.txt", loader_cls=TextLoader)
+    loader = DirectoryLoader(gst_data_path, glob="**/*.txt", loader_cls=TextLoader, encoding='utf-8' )
     documents = loader.load()
 
     # Split documents
@@ -67,6 +67,6 @@ qa_chain = RetrievalQA.from_chain_type(llm, retriever=db.as_retriever())
 
 
 # Example query
-query = "what is the taxatbility provision for road construction under annuity model in GST give all the legal provisions, classifcation, ciruclars and notifcations also"
-result = qa_chain({"query": query})
-print(result["result"])
+# query = "what is the taxatbility provision for road construction under annuity model in GST give all the legal provisions, classifcation, ciruclars and notifcations also"
+# result = qa_chain({"query": query})
+# print(result["result"])
