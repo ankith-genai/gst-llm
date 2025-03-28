@@ -12,9 +12,8 @@ redis_url = "redis://127.0.0.1:6379"
 redis_client = redis.Redis.from_url(redis_url)
 index_name = "gst_index"
 
-base_url = "http://localhost:8080"
 # Initialize the language model
-llm = Ollama(model="llama2",  base_url=base_url)  # Replace with your chosen Ollama model
+llm = Ollama(model="llama2")  # Replace with your chosen Ollama model
 
 # Create the Redis vectorstore
 db = Redis(
