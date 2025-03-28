@@ -7,3 +7,4 @@ langchain-ollama
 langchain-huggingface
 tiktoken
 langchain-community
+chardet
