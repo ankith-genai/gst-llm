@@ -37,7 +37,7 @@ This project provides a Retrieval Augmented Generation (RAG) based chat API usin
     
     2. Run the Ollama container:
         ```bash
-        docker run -d --name ollama -p 8080:8080 ollama/ollama
+        docker run -d --name ollama -p 11434:11434 ollama/ollama
         ```
     
     3. Pull the Llama2 model:
@@ -57,7 +57,7 @@ This project provides a Retrieval Augmented Generation (RAG) based chat API usin
 
 5.  **Run the Flask Application:**
     ```bash
-    python app.py
+    python query_svc/app.py
     ```
 
 ## API Usage
@@ -67,4 +67,4 @@ Send a POST request to `/query` with a JSON payload containing the `query` param
 Example:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"query": "what is the taxatbility provision for road construction under annuity model in GST give all the legal provisions, classifcation, ciruclars and notifcations also"}' http://localhost:5000/query
+curl -X POST -H "Content-Type: application/json" -d '{"query": "what is the taxatbility provision for road construction under annuity model in GST give all the legal provisions, classifcation, ciruclars and notifcations also"}' http://localhost:5000/gst_query
