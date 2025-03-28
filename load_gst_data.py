@@ -46,7 +46,7 @@ except redis.exceptions.ResponseError:
     # Load documents
     text_loader_kwargs={'autodetect_encoding': True}
 
-    loader = DirectoryLoader(gst_data_path, glob="**/*.txt", loader_cls=TextLoader, encoding='utf-8' , loader_kwargs=text_loader_kwargs)
+    loader = DirectoryLoader(gst_data_path, glob="**/*.txt", loader_cls=TextLoader, loader_kwargs=text_loader_kwargs)
     documents = loader.load()
 
     # Split documents
